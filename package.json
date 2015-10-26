@@ -14,7 +14,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:nathanhoad/xero.git"
+    "url": "git@github.com:paintzen/xero.git"
   },
   "keywords": [
     "xero",
