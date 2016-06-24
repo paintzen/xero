@@ -6,11 +6,11 @@ var XERO_BASE_URL = 'https://api.xero.com';
 var XERO_API_URL = XERO_BASE_URL + '/api.xro/2.0';
 
 
-function Xero (key, secret, rsa_key) {
+function Xero (key, secret, rsa_key, headers) {
     this.key = key;
     this.secret = secret;
 
-    this.oa = new oauth.OAuth(null, null, key, secret, '1.0', null, "PLAINTEXT", null, { "Accept": "application/json" });
+    this.oa = new oauth.OAuth(null, null, key, secret, '1.0', null, "PLAINTEXT", null, headers || { "Accept": "application/json" } );
     this.oa._signatureMethod = "RSA-SHA1"
     this.oa._createSignature = function (signatureBase, tokenSecret) {
         return crypto.createSign("RSA-SHA1").update(signatureBase).sign(rsa_key, output_format = "base64");
