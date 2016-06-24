@@ -51,7 +51,7 @@ Xero.prototype.call = function (method, path, body, callback, rootElem) {
             } 
         } catch (err){
             // could be pdf
-            callback(jsonString);
+            callback(null, jsonString, res);
         }
     };
     //console.log('xml from Xero.call');
