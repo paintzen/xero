@@ -41,13 +41,17 @@ Xero.prototype.call = function (method, path, body, callback, rootElem) {
         if (err) {
             return callback(err);
         }
+        try {
+            var json = JSON.parse(jsonString);
 
-        var json = JSON.parse(jsonString);
-
-        if (json.Status !== 'OK') {
-          return callback(json, res);
-        } else {
-          return callback(null, json, res);
+            if (json.Status !== 'OK') {
+              return callback(json, res);
+            } else {
+              return callback(null, json, res);
+            } 
+        } catch (err){
+            // could be pdf
+            callback(jsonString);
         }
     };
     //console.log('xml from Xero.call');
