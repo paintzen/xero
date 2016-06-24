@@ -50,8 +50,8 @@ Xero.prototype.call = function (method, path, body, callback, rootElem) {
           return callback(null, json, res);
         }
     };
-    console.log('xml from Xero.call');
-    console.log(xml);
+    //console.log('xml from Xero.call');
+    //console.log(xml);
     return self.oa._performSecureRequest(self.key, self.secret, method, self.XERO_API_URL + path, null, xml, 'application/xml', callback ? process : null);
 };
 
