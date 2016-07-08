@@ -1,6 +1,6 @@
 {
-  "name": "xero-extended",
-  "version": "0.0.8",
+  "name": "@paintzen/xero",
+  "version": "0.1.10",
   "dependencies": {
     "oauth": "0.9.10",
     "easyxml": "1.0.0",
@@ -21,10 +21,7 @@
     "node",
     "nodejs"
   ],
-  "author": {
-    "name": "thallium205",
-    "url": "https://github.com/thallium205"
-  },
+  "author": "thallium205 (https://github.com/thallium205)",
   "contributors": {
     "name": "nathanhoad",
     "url": "http://nathanhoad.net"
@@ -32,5 +29,12 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha --reporter spec"
+  },
+  "bugs": {
+    "url": "https://github.com/paintzen/xero/issues"
+  },
+  "homepage": "https://github.com/paintzen/xero",
+  "directories": {
+    "test": "test"
   }
 }

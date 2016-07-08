@@ -1,0 +1,9 @@
+{
+  "esnext": true,
+  "evil": true,
+  "eqnull": true,
+  "globalstrict": true,
+  "predef": ["beforeEach", "console", "define", "describe", "it", "module", "process", "require"],
+  "undef": true,
+  "unused": true
+}
