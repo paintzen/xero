@@ -1,6 +1,6 @@
 {
   "name": "xero-extended",
-  "version": "0.0.8",
+  "version": "3.0.0",
   "dependencies": {
     "oauth": "0.9.10",
     "easyxml": "1.0.0",
