@@ -22,12 +22,8 @@
     "nodejs"
   ],
   "author": {
-    "name": "thallium205",
-    "url": "https://github.com/thallium205"
-  },
-  "contributors": {
-    "name": "nathanhoad",
-    "url": "http://nathanhoad.net"
+    "name": "equalbackslash",
+    "url": "https://github.com/equalbackslash"
   },
   "license": "MIT",
   "scripts": {
